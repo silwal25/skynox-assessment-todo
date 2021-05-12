@@ -1,0 +1,9 @@
+.header {
+  @include centerAlign(row);
+  padding: 3rem 0;
+  background-color: #000;
+  .heading-primary {
+    color: #fff;
+    font-weight: 600;
+  }
+}
