@@ -1,6 +1,4 @@
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import gsap from 'gsap'
-
 import Task from './Task'
 
 export default function Tasks({ tasks, setTasks }) {
