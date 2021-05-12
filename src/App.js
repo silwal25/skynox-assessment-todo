@@ -1,5 +1,5 @@
 // Import libs
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import './styles/App.scss'
 import Header from './components/Header'
@@ -8,6 +8,23 @@ import Tasks from './components/Tasks'
 
 function App() {
   const [tasks, setTasks] = useState([])
+
+  //retrieving data
+  useEffect(() => {
+    const str = localStorage.getItem('data')
+    const data = JSON.parse(str)
+    if (data) {
+      setTasks(data)
+    } else {
+      setTasks([])
+    }
+  }, [])
+
+  // Saving data to local storage
+  useEffect(() => {
+    const data = JSON.stringify(tasks)
+    localStorage.setItem('data', data)
+  }, [tasks])
   return (
     <div className="App">
       <Header />

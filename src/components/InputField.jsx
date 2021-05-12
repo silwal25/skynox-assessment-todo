@@ -11,6 +11,7 @@ export default function InputField({ setTasks }) {
       alert('Please enter a task')
     }
   }
+
   return (
     <div className="todo-input">
       <form className="form" onSubmit={(e) => addTasks(e)}>
