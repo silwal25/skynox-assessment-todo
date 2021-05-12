@@ -14,10 +14,3 @@ export default function Tasks({ tasks, setTasks }) {
     </div>
   )
 }
-
-function enter(node) {
-  console.log('enter')
-}
-function exit(node) {
-  console.log('exit')
-}
