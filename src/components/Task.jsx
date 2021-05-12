@@ -18,10 +18,10 @@ export default function Task({ task, tasks, setTasks }) {
       <h4 className="heading-secondary">{task.text}</h4>
       <div className="cta">
         <button className="btn btn--delete" onClick={deleteTask}>
-          <i class="fas fa-trash-alt"></i>
+          <i className="fas fa-trash-alt"></i>
         </button>
         <button className="btn btn--edit" onClick={editTask}>
-          <i class="fas fa-pen"></i>
+          <i className="fas fa-pen"></i>
         </button>
       </div>
     </div>
